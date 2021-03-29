@@ -79,11 +79,12 @@ test:
 #
 # You can use this database configuration with:
 #
-#   production:
-#     url: <%= ENV['DATABASE_URL'] %>
-#
 production:
-  <<: *default
-  database: product-register_production
-  username: product-register
-  password: <%= ENV['PRODUCT-REGISTER_DATABASE_PASSWORD'] %>
+  url: <%= ENV['postgres://wpvikwghrntika:f8fc26c43fdbd653e6bdd858a575a1b0905cc98596d316ae1f23e3ab23acec13@ec2-3-91-127-228.compute-1.amazonaws.com:5432/d5hg270v5euqjb'] %>
+
+#
+#production:
+#  <<: *default
+#  database: product-register_production
+#  username: product-register
+#  password: <%= ENV['PRODUCT-REGISTER_DATABASE_PASSWORD'] %>
